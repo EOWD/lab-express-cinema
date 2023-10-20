@@ -1,0 +1,24 @@
+<div>
+<img src="{{movie.image}}" alt="">
+</div>
+
+<form action="/movies/update/{{movie.id}}" method="POST">
+<label for="title">
+    Name
+    <input type="text" id="title" name="title" value="{{movie.title}} " style="width: fit-content;">
+</label>
+<label for="stars">
+    Stars
+    <input type="text" id="stars" name="stars" value="{{movie.stars}}">
+</label>
+<label for="Description">
+    Description
+    <input type="text" id="Description" name="Description" value="{{movie.description}}"style="width: auto; display: inline-block;">
+</label>
+<label for="title">
+   Director
+    <input type="text" id="Director" name="Director" value="{{movie.director}}">
+</label>
+
+<button type="submit">update</button>
+</form>
